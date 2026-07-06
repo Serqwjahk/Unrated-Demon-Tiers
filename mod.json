@@ -1,0 +1,37 @@
+{
+	"geode": "5.7.1",
+	"gd": {
+		"win": "2.2081",
+		"mac": "2.2081"
+	},
+	"id": "serqwjahk.unrated-demon-tiers",
+	"name": "Unrated Demon Tiers",
+	"version": "v1.0.0",
+	"developer": "Serqwjahk",
+	"description": "Pick and share the demon tier of your own unrated demon levels.",
+	"dependencies": {
+		"geode.node-ids": ">=v1.23.3"
+	},
+	"settings": {
+		"language": {
+			"name": "Language",
+			"description": "Language of the mod's UI.",
+			"type": "string",
+			"default": "English",
+			"one-of": ["English", "Espanol"]
+		},
+		"open-key": {
+			"name": "Picker key",
+			"description": "Key (A-Z) that opens the tier picker on the info page of your levels.",
+			"type": "string",
+			"default": "T",
+			"filter": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+		},
+		"debug-popup": {
+			"name": "Debug popup",
+			"description": "Shows a popup with the level's internal info. Development only.",
+			"type": "bool",
+			"default": false
+		}
+	}
+}
